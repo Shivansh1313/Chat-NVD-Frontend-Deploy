@@ -1,4 +1,4 @@
-const environment = 'dev';
+const environment = 'prod';
 // config.js (or any other file)
 
 
@@ -14,7 +14,7 @@ if(environment == 'prod')
 {
      config = {
     
-        API_BASE_URL: "http://localhost:8001",
+        API_BASE_URL: "http://13.236.160.236",
       
       
     };
