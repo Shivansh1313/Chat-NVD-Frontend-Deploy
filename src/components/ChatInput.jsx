@@ -86,22 +86,41 @@ const ChatInput = ({ addMessage,loadingFlag,deleteAllMessages }) => {
 
 
   return (
-    <div className="chat-input-container">
-    <form className="chat-input" onSubmit={handleSubmit}>
-      <input
-        type="text"
-        value={userInput}
-        onChange={(e) => setUserInput(e.target.value)}
-        onKeyDown={handleKeyPress}
-        placeholder="Type a message..."
-      />
-      <button type="submit">Send</button>
-    </form>
-     {/* Delete All button */}
-     <button className="delete-button" onClick={handleDeleteAll}>
-     Delete All
-   </button>
-   </div>
+//     <div className="chat-input-container">
+//     <form className="chat-input" onSubmit={handleSubmit}>
+//       <input
+//         type="text"
+//         value={userInput}
+//         onChange={(e) => setUserInput(e.target.value)}
+//         onKeyDown={handleKeyPress}
+//         placeholder="Type a message..."
+//       />
+//       <button type="submit">Send</button>
+//     </form>
+//      {/* Delete All button */}
+//      <button className="delete-button" onClick={handleDeleteAll}>
+//      Delete All
+//    </button>
+//    </div>
+
+<div className="chat-input-container">
+  <form className="chat-input" onSubmit={handleSubmit}>
+    <input
+      type="text"
+      value={userInput}
+      onChange={(e) => setUserInput(e.target.value)}
+      onKeyDown={handleKeyPress}
+      placeholder="Type a message..."
+    />
+    <div className="chat-input-buttons">
+      <button type="submit" className='send-button'>Send</button>
+      <button className="delete-button" onClick={handleDeleteAll}>
+        Delete All
+      </button>
+    </div>
+  </form>
+</div>
+
   );
 };
 

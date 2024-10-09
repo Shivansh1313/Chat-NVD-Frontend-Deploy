@@ -3,51 +3,77 @@
   justify-content: space-between;
   align-items: center;
   position: sticky;
-    bottom: 0;
-    /* background-color: #242424; */
-    background: #25294A;
-    border-top: 1px solid #ccc;
+  bottom: 0;
+  background: #25294A;
+  border-top: 1px solid #ccc;
 }
-/* .chat-input {
-    display: flex;
-    border-top: 1px solid #ccc;
-    padding: 20px;
-    
-    
-  } */
-  
-  .chat-input {
-    flex: 1;
-    display: flex;
-    
-    padding: 20px;
-  }
-  .chat-input input {
-    flex: 1;
+
+/* Default layout for larger screens */
+.chat-input {
+  flex: 1;
+  display: flex;
+  padding: 20px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+  background: #1F233E;
+  color: white;
+}
+
+.send-button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delete-button {
+  padding: 10px 20px;
+  background-color: #FD4264;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* For smaller screens less than 700px */
+@media (max-width: 700px) {
+  .chat-input-container {
+    flex-direction: column;
     padding: 10px;
-    /* border: 1px solid #ccc; */
-    border-radius: 8px;
-    outline: none;
-    background: #1F233E;
-    color: white;
   }
-  
-  .chat-input button {
-    margin-left: 10px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+
+  .chat-input {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
   }
-  
+
+  .chat-input input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .chat-input-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .chat-input-buttons button {
+    width: 48%;
+    margin-left: 0;
+  }
+
   .delete-button {
-    padding: 10px 20px;
-    background-color: #FD4264;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-left: 10px;
+    margin-left: 0;
   }
+}

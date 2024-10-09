@@ -1,7 +1,7 @@
 
 .chatbot-container {
     width: auto;
-    height: 92vh;
+    height: 98vh;
     margin: auto 50px;
     
     border: 1px solid #ccc;
@@ -17,6 +17,13 @@
     background: #25294A;
   }
   
+  @media (max-width: 1000px) {
+    .chatbot-container {
+      
+     margin: 0px;
+     
+  }}
+
   .chatnvd-heading{
     display: flex;
     justify-content: center;
