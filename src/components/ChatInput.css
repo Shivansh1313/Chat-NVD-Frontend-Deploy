@@ -4,7 +4,8 @@
   align-items: center;
   position: sticky;
     bottom: 0;
-    background-color: #242424;
+    /* background-color: #242424; */
+    background: #25294A;
     border-top: 1px solid #ccc;
 }
 /* .chat-input {
@@ -27,6 +28,8 @@
     /* border: 1px solid #ccc; */
     border-radius: 8px;
     outline: none;
+    background: #1F233E;
+    color: white;
   }
   
   .chat-input button {
@@ -41,8 +44,8 @@
   
   .delete-button {
     padding: 10px 20px;
-    background-color: red;
-    color: white;
+    background-color: #FD4264;
+    color: #FFFFFF;
     border: none;
     border-radius: 8px;
     cursor: pointer;

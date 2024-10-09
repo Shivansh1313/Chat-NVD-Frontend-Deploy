@@ -23,12 +23,12 @@ const ChatWindow = ({ messages,loadingFlag }) => {
           
         </div>
         {loadingFlag && msg.role == 'user' && index == messages.length - 1 && (
-            <Box sx={{ width: 'auto' ,background:'white', borderRadius: '8px', padding:'10px', }}>
-              <Skeleton    variant='rounded'sx={{ bgcolor: 'grey.400',margin:'10px' }}/>
-              <Skeleton    variant='rounded'sx={{ bgcolor: 'grey.400',margin:'10px' }}/>
-              <Skeleton    variant='rounded'sx={{ bgcolor: 'grey.400',margin:'10px' }}/>
-              <Skeleton    variant='rounded'sx={{ bgcolor: 'grey.400',margin:'10px' }}/>
-              <Skeleton    variant='rounded'sx={{ bgcolor: 'grey.400',margin:'10px' }}/>
+            <Box sx={{ width: 'auto' ,background:'#A7ACDF', borderRadius: '8px', padding:'10px', }}>
+              <Skeleton    variant='rounded'sx={{ bgcolor: 'grey.800',margin:'10px' }}/>
+              <Skeleton    variant='rounded'sx={{ bgcolor: 'grey.800',margin:'10px' }}/>
+              <Skeleton    variant='rounded'sx={{ bgcolor: 'grey.800',margin:'10px' }}/>
+              <Skeleton    variant='rounded'sx={{ bgcolor: 'grey.800',margin:'10px' }}/>
+              <Skeleton    variant='rounded'sx={{ bgcolor: 'grey.800',margin:'10px' }}/>
               
 
             </Box>

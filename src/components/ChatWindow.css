@@ -1,6 +1,12 @@
+.chat-window{
+  display: flex;
+  flex-direction: column;
+}
+
 .chat-window h1, .chat-window h2, .chat-window h3 {
   margin: 0;
   font-weight: bold;
+  
 }
 
 .chat-window ul {
@@ -16,7 +22,8 @@
 }
 
 .message.assistant {
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
+  background: #A7ACDF ;
   padding: 10px;
   border-radius: 8px;
   margin-bottom: 10px;
@@ -24,10 +31,13 @@
 }
 
 .message.user {
-  background-color: #007bff;
+  /* background-color: #2D325A; */
+  /* background: #2D325A; */
+  background: #32396e;
   color: white;
   padding: 10px;
   border-radius: 8px;
   margin-bottom: 10px;
   align-self: flex-end;
+  min-width: 100px;
 }
