@@ -42,6 +42,9 @@ const [flag, setFlag] = useState(false);
   };
   return (
     <div className="chatbot-container">
+      <div className='chatnvd-heading'>
+        ChatNVD
+      </div>
       <ChatWindow messages={messages} loadingFlag= {flag} />
       <ChatInput addMessage={addMessage} loadingFlag= {loadingFlag} deleteAllMessages={deleteAllMessages}/>
     </div>

@@ -12,7 +12,22 @@
     background-color: #242424;
     padding:20px ;
     padding-bottom: 0px;
+    padding-top: 0px;
     overflow: auto;
     background: #25294A;
   }
   
+  .chatnvd-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: 800;
+    background-color: #2D325A;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-size: 20px;
+  }
