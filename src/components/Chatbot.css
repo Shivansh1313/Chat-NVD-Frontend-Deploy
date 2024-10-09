@@ -19,7 +19,7 @@
   
   @media (max-width: 1000px) {
     .chatbot-container {
-      
+      height: 94vh;
      margin: 0px;
      
   }}
