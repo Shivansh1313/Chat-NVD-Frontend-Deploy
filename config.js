@@ -14,7 +14,7 @@ if(environment == 'prod')
 {
      config = {
     
-        API_BASE_URL: "http://13.236.160.236",
+        API_BASE_URL: "https://chatnvd.ddns.net",
       
       
     };
