@@ -25,7 +25,7 @@ const [flag, setFlag] = useState(false);
   const deleteAllMessages = async() => {
     try {
       setFlag(1);
-      const response = await fetch(`${apiBaseUrl}/user_123`, {
+      const response = await fetch(`${apiBaseUrl}/conversations/user_123`, {
         method: "DELETE",
       });
 
